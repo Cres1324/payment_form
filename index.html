@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sign up!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+
+</header>
+
+    <div class="sign_in_content">
+        <div class="logo">
+            <img src="./images/logo (1).png" alt="Nice logo"></img>
+            <div class="img_text">Sharingan foundation</div>
+        </div>
+        <div class="form_content">
+            <div class="description">
+                <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</h2>
+                    <h3>You <span class="italic">know</span> you want to.</h3>
+            </div>
+            <div class="forms">
+                <fieldset>
+                    <form id="main_form" name="main_form" action="post">
+                        <ul>
+                            <li>
+                                <label for="first_name">*First Name:</label>
+                                <input type="text" name="first_name" id="first_name"
+                                 required placeholder="Name" title="Fill your name"></input>
+                            </li>
+
+                            <li>
+                                <label for="email">*Email:</label>
+                                <input type="email" name="email" id="email" 
+                                required placeholder="asd@gmail.com" title="Fill your Email"></input>
+                            </li>
+                            
+                            <li>
+                                <label for="password">*Password:</label>
+                                <input type="password" name="password" id="password"
+                                 required placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                 title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                 onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters' : ''); 
+                                 if(this.checkValidity()) form.repassword.pattern = this.value;"
+                                  placeholder="Password" required ></input>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label for="last_name">*Last Name:</label>
+                                <input type="text" name="last_name" id="last_name"
+                                 required placeholder="Last name" title="Fill your last name"></input>
+                            </li>
+                            <li>
+                                <label for="pnumber">Phone number:</label>
+                                <input type="tel" name="pnumber" id="pnumber"
+                                placeholder="123456789" pattern="[0-9]{9}" title="Must contain 9 digits"></input>
+                            </li>
+                            <li>
+
+                                <label for="repassword">Repeat password:</label>
+                                <input type="password" name="repassword" id="repassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Please enter the same Password'"
+                                onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password' : '');" 
+                                placeholder="Verify Password" required></input>
+                            </li>
+                            
+                        </ul>
+
+                    </form>
+                </fieldset>
+
+            </div>
+            <div class="additionanal">
+            <form name="add_form">
+                <button type="submit" form="main_form" value="submit">Create account</button>
+            </form>
+                <p>Already have an account? <a href="file:///home/krzysztof/Documents/Learning/repos/form/sign_up_form/index.html">Log in</a></p>
+
+            </div>
+            
+        </div>
+
+    </div>
+   <footer>
+    Copyright @:D
+   </footer>
+    
+</body>
+</html>

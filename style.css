@@ -1,0 +1,154 @@
+
+html{
+    min-height: 100%;
+    min-width: 100%;
+    overflow-x: scroll;
+}
+header{
+    height: 4vh;
+}
+body{
+    background-image: url(./images/Backform.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: inherit;
+    font-family: "lora", serif;
+}
+
+footer{
+    display: flex;
+    flex:none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.459);
+    bottom:0;
+    color: azure;
+    left:0;
+    width:100%;
+    font-size: 3vh;
+    max-height: 5vh;
+}
+
+img{
+    max-height: 15vh;
+    padding-left: 10px;
+
+}
+.img_text{
+    height: 2em;
+    width:10em;
+    padding: 0px 30px 0px 10px;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3vh;
+    color: azure;
+
+}
+
+.sign_in_content{
+    display:flex;
+    justify-content: flex-end;
+   
+}
+.logo{
+    align-self: center;
+    position: relative;
+    display: flex;
+    left: -10px;
+    width: 100%;
+    max-height:25vh;
+    margin-left: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.568);
+    justify-content: center;
+    align-items: center;
+}
+fieldset{
+    max-width: 50vw;
+}
+.form_content{
+    box-sizing:content-box;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    min-width: 50vw;
+    min-height: 80vh;
+    background-color: rgb(242, 247, 237);
+    border-radius: 24px;
+    right: 40px;
+}
+li{
+list-style-type: none;
+}
+.description{ 
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    margin:0;
+}
+fieldset{
+    width: inherit;
+    background-color:rgb(252, 255, 248);
+    border: solid 1px rgb(201, 204, 198);;
+    border-radius: 12px;
+
+}
+.forms{
+    display: flex;
+    justify-content: center;
+}
+#main_form{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ul{
+    padding: 10px;
+    width:50%;
+}
+.forms li input{    
+    width: 100%;
+
+}
+
+.forms li input:placeholder-shown{
+    border: solid 2px;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));;
+}
+input:valid:hover{
+    border-color: green;
+}
+input:invalid:hover{
+    border-color: red;
+}
+input:placeholder-shown{
+
+}
+.italic{
+    font-style: italic;
+}
+#filter_list{
+    overflow-x: scroll;
+}
+/* wraping forms if screen too small*/
+@media screen and (max-width:625px) {
+        form{
+            flex-wrap: wrap;
+        }    
+    }
+
+button{
+    margin: 20px 0px 10px 10px;
+    width: 140px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    color: azure;
+    background-color: rgba(38, 134, 102, 0.897);
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 2px 2px rgba(190, 187, 187, 0.457) ;
+}
